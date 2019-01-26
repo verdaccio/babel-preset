@@ -12,6 +12,10 @@ To use the preset in your `.babelrc` file, you have to add it using:
 }
 ```
 
+`BABEL_ENV` options possibles are: `ui`, `test`, `registry` and `docker`.
+
+Note: `docker` has a fixed Node targed with `10`;
+
 ### Options
 
 Flow transpile is enabled by default, but can be explicitely enabled like:
