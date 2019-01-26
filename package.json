@@ -1,0 +1,59 @@
+{
+  "name": "@verdaccio/babel-preset",
+  "version": "0.0.1",
+  "description": "A common preset for Verdaccio projects",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "author": "Juan Picado <juanpicado19@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/node": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "7.2.3",
+    "@babel/plugin-proposal-decorators": "7.2.3",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/plugin-proposal-function-sent": "7.2.0",
+    "@babel/plugin-proposal-json-strings": "7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-import-meta": "7.2.0",
+    "@babel/plugin-transform-async-to-generator": "7.2.0",
+    "@babel/plugin-transform-classes": "7.2.2",
+    "@babel/plugin-transform-runtime": "7.2.0",
+    "@babel/polyfill": "7.2.3",
+    "@babel/preset-env": "7.2.3",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.4",
+    "babel-plugin-dynamic-import-node": "2.2.0",
+    "babel-plugin-emotion": "9.2.10",
+    "babel-plugin-flow-runtime": "0.17.0"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-google": "0.11.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "eslint-plugin-verdaccio": "0.0.5",
+    "prettier": "1.14.3"
+  },
+  "scripts": {
+    "lint": "eslint lib/*.js"
+  },
+  "eslintConfig": {
+    "extends": ["@verdaccio"]
+  }
+}
