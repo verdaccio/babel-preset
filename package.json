@@ -1,6 +1,6 @@
 {
   "name": "@verdaccio/babel-preset",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A common preset for Verdaccio projects",
   "files": [
     "lib"
