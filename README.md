@@ -34,6 +34,8 @@ To use Typescript
 }
 ```
 
+⚠️ Be aware you cannot enable `flow` and `typescript` at the same time. 
+
 To use a different Node targed version (by default is `6.10`)
 
 ```json
