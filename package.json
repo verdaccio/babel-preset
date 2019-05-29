@@ -52,6 +52,8 @@
   },
   "scripts": {
     "lint": "eslint lib/*.js",
+    "build": "",
+    "test": "",
     "release": "standard-version -a -s"
   },
   "eslintConfig": {
