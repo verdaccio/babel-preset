@@ -5,7 +5,7 @@ aliases:
     working_directory: ~/work-cache
   - &node11_executor
     docker:
-      - image: circleci/node:11.10.1
+      - image: circleci/node:11
   - &node8_executor
     docker:
       - image: circleci/node:8
@@ -61,9 +61,6 @@ jobs:
       - run:
           name: Install Js dependencies
           command: yarn install --no-progress --registry https://registry.verdaccio.org --no-lockfile
-      - run:
-          name: Build project
-          command: yarn run build
       - save_cache:
           key: *yarn_cache_key
           paths:
@@ -82,7 +79,7 @@ jobs:
       - *restore_repo
       - run:
           name: Test with Node 11
-          command: yarn run test
+          command: yarn lint
 
   test_node8:
     <<: *defaults
@@ -91,7 +88,7 @@ jobs:
       - *restore_repo
       - run:
           name: Test with Node 8
-          command: yarn test
+          command: yarn lint
 
   test_node10:
     <<: *defaults
@@ -100,7 +97,7 @@ jobs:
       - *restore_repo
       - run:
           name: Test with Node 10
-          command: yarn run test
+          command: yarn lint
 
   publish_package:
     <<: *defaults
