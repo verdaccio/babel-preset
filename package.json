@@ -37,7 +37,8 @@
     "babel-jest": "24.8.0",
     "babel-plugin-dynamic-import-node": "2.2.0",
     "babel-plugin-emotion": "10.0.9",
-    "babel-plugin-flow-runtime": "0.19.0"
+    "babel-plugin-flow-runtime": "0.19.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -52,11 +53,14 @@
   },
   "scripts": {
     "lint": "eslint lib/*.js",
-    "release": "standard-version -a -s"
+    "release": "standard-version -a -s",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": [
       "@verdaccio"
     ]
-  }
+  },
+  "snyk": true
 }
