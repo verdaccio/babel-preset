@@ -18,31 +18,15 @@ Note: `docker` has a fixed Node targed with `10`;
 
 ### Options
 
-Flow transpile is enabled by default, but can be explicitely enabled like:
+To use a different Node target version (by default is `6.10`)
 
 ```json
 {
-  "presets": [["@verdaccio", {"flow": true}]]
+  "presets": [["@verdaccio", {"node": "9"}]]
 }
 ```
 
-To use Typescript
-
-```json
-{
-  "presets": [["@verdaccio", {"typescript": true}]]
-}
-```
-
-⚠️ Be aware you cannot enable `flow` and `typescript` at the same time. 
-
-To use a different Node targed version (by default is `6.10`)
-
-```json
-{
-  "presets": [["@verdaccio", {"node": "6.10"}]]
-}
-```
+> Node 8.15 is the minimum version supported and the default set up.
 
 Enable debug
 

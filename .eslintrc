@@ -12,8 +12,7 @@
   "settings": {
     "react": {
       "pragma": "React",
-      "version": "16.4.2",
-      "flowVersion": "0.81.0"
+      "version": "16.4.2"
     }
   },
   "parser": "babel-eslint",
